@@ -30,12 +30,11 @@
 
 .input__element {
     border: none;
-    padding: 0%;
     border-bottom: 1px solid var(--main-color);
     font-size: 13px;
     font-weight: 500;
     color: var(--text-color);
-    padding-bottom: 4px;
+    padding: 0 0 4px;
 }
 
 .input__element:focus-visible {

@@ -86,6 +86,10 @@
     margin-bottom: 60px;
 }
 
+.profile__change-password-form {}
+
+.profile__edit-profile-form {}
+
 .profile__actions-section {}
 
 .profile__actions-section_centered {

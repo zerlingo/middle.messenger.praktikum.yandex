@@ -29,5 +29,5 @@
     width: 20px;
     height: 20px;
     margin-right: 4px;
-    background-image: '../../../static/search.png';
+    background-image: url("../../../static/search.png");
 }
