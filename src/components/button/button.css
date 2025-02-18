@@ -12,7 +12,7 @@
 
 .button_primary {
     background-color: var(--main-color);
-    color: #fff;
+    color: #FFFFFF;
     font-size: 13px;
 }
 
@@ -35,7 +35,7 @@
     width: 11px;
     height: 1.6px;
     position: relative;
-    background-color: #fff;
+    background-color: #FFFFFF;
 }
 
 .button-arrow__left::after,
@@ -43,7 +43,7 @@
 .button-arrow__right::after,
 .button-arrow__right::before {
     content: "";
-    background-color: #fff;
+    background-color: #FFFFFF;
     display: inline-block;
     width: 7px;
     height: 1.6px;

@@ -17,7 +17,7 @@
     position: absolute;
     width: calc(100% - 20px);
     height: 1px;
-    background: #EAEAEA;
+    background: var(--border-color);
 }
 
 .chat::after {
@@ -51,14 +51,14 @@
 .chat__name {
     margin: 0 0 4px;
     font-size: 13px;
-    color: #1E1E1E;
+    color: var(--text-color);
 }
 
 .chat__preview {
     margin: 0;
     font-size: 12px;
     line-height: 15px;
-    color: #999999;
+    color: var(--text-secondary-color);
 }
 
 .chat__date {
@@ -66,7 +66,7 @@
     top: 5px;
     right: 5px;
     font-size: 9px;
-    color: #999999;
+    color: var(--text-secondary-color);
 }
 
 .chat__unreadMsg {
@@ -81,5 +81,5 @@
     right: 5px;
     font-size: 11px;
     color: #FFFFFF;
-    background-color: #3369F3;
+    background-color: var(--main-color);
 }

@@ -7,15 +7,15 @@
     font-size: 13px;
     line-height: 13px;
     font-weight: 500;
-    color: #1E1E1E;
+    color: var(--text-color);
 }
 
 .data-table + .data-table {
-    border-top: 1px solid #EAEAEA;
+    border-top: 1px solid var(--border-color);
 }
 
 .data-table__label {}
 
 .data-table__value {
-    color: #999999;
+    color: var(--text-secondary-color);
 }

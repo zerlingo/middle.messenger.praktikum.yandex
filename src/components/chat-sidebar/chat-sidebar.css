@@ -18,7 +18,7 @@
     justify-content: end;
     font-size: 12px;
     line-height: 1;
-    color: #999999;
+    color: var(--text-secondary-color);
     padding: 4px 0;
 }
 

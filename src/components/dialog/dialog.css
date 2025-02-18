@@ -29,7 +29,7 @@
     font-size: 15px;
     line-height: 20px;
     font-weight: 500;
-    color: #1E1E1E;
+    color: var(--text-color);
 }
 
 .dialog__title_error {

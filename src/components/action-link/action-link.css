@@ -1,6 +1,6 @@
 .action-link {
     display: block;
-    color: #3369F3;
+    color: var(--link-color);
     font-size: 13px;
     line-height: 13px;
     font-weight: 500;
@@ -8,7 +8,7 @@
 }
 
 .action-link + .action-link {
-    border-top: 1px solid #EAEAEA;
+    border-top: 1px solid var(--border-color);
 }
 
 .action-link:hover {

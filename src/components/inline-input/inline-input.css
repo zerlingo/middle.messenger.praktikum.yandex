@@ -7,11 +7,11 @@
     font-size: 13px;
     line-height: 13px;
     font-weight: 500;
-    color: #1E1E1E;
+    color: var(--text-color);
 }
 
 .inline-input + .inline-input {
-    border-top: 1px solid #EAEAEA;
+    border-top: 1px solid var(--border-color);
 }
 
 .inline-input__label {
@@ -19,7 +19,7 @@
 }
 
 .inline-input__input {
-    color: #999999;
+    color: var(--text-secondary-color);
     border: none;
     background: none;
     max-width: 280px;

@@ -8,14 +8,14 @@
     width: 30%;
     height: 100%;
     background-color: #FBFBFB;
-    border-right: 1px solid #EAEAEA;
+    border-right: 1px solid var(--border-color);
     overflow-y: hidden;
 }
 
 .chat-layout__main {
     width: 70%;
     background-color: #FFFFFF;
-    color: #999999;
+    color: var(--text-secondary-color);
 }
 
 .chat-layout__main_empty {
