@@ -1,0 +1,21 @@
+.data-table {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 500;
+    color: #1E1E1E;
+}
+
+.data-table + .data-table {
+    border-top: 1px solid #EAEAEA;
+}
+
+.data-table__label {}
+
+.data-table__value {
+    color: #999999;
+}

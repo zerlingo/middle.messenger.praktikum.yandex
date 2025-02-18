@@ -1,0 +1,12 @@
+export { NavigationPage } from './navigation';
+export { LoginPage } from './login';
+export { RegistrationPage } from './registration';
+export { ChatListPage } from './chat-list';
+export { OpenedChatPage } from './opened-chat';
+export { AddUserPage } from './add-user';
+export { ProfilePage } from './profile';
+export { ProfileEditPage } from './profile-edit';
+export { ProfileChangePasswordPage } from './profile-change-password';
+export { ProfileChangeAvatarPage } from './profile-change-avatar';
+export { Error404Page } from './error404';
+export { Error5xxPage } from './error5xx';

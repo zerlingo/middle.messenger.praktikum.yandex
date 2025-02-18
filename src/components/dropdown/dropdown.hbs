@@ -1,0 +1,13 @@
+<nav class="dropdown dropdown_{{ position }}">
+    <ul class="dropdown__list">
+        {{#each options}}
+            <li class="dropdown__item"><a href="#" class="dropdown__item-link">
+                <span
+                    class="dropdown__item-icon"
+                    style="background-image: url('../../../static/img/{{ icon }}.svg')">
+                </span>
+                <span class="dropdown__item-label">{{ label }}</span>
+            </a></li>
+        {{/each }}
+    </ul>
+</nav>

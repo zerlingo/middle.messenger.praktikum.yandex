@@ -1,0 +1,13 @@
+<div class="container">
+    <form class="login-form" action="">
+        <div class="login-form__body">
+            <h1 class="login-form__title">Вход</h1>
+            {{> Input name="login" label="Логин" error-text="Неверный логин" }}
+            {{> Input name="password" label="Пароль" password=true }}
+        </div>
+        <div class="login-form__footer">
+            {{> Button label="Войти" type="primary" }}
+            {{> Button label="Нет аккаунта?" type="link" }}
+        </div>
+    </form>
+</div>

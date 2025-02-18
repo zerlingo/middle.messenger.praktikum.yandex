@@ -1,0 +1,42 @@
+.file-input {
+    position: relative;
+    display: inline-block;
+}
+
+.file-input__btn {
+    position: relative;
+    display: inline-block;
+    text-decoration: underline;
+    cursor: pointer;
+    outline: none;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    color: #3369F3;
+}
+
+.file-input__text {
+    padding: 0 10px;
+    line-height: 40px;
+    display: inline-block;
+}
+
+.file-input__input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    display: block;
+    width: 0;
+    height: 0;
+}
+
+.file-input__input:focus + .file-input__btn {}
+
+.file-input:hover .file-input__btn {}
+
+.file-input:active .file-input__btn {}
+
+.file-input__input:disabled + .file-input__btn {}

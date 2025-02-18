@@ -1,0 +1,28 @@
+<main class="profile">
+    <div class="profile__title-section">
+        <div class="profile__avatar">
+            <div class="profile__empty-avatar"></div>
+            {{#if profileData.avatar }}
+                <img
+                        class="profile__avatar-img"
+                        src="{{ profileData.avatar }}"
+                        alt="Аватар {{ profileData.chatName }}"
+                >
+            {{/if }}
+            <a class="profile__change-avatar-link" href="#" page="profileChangeAvatar">Поменять<br> аватар</a>
+        </div>
+        <h1 class="profile__chatName">{{ profileData.chatName }}</h1>
+    </div>
+    <div class="profile__edit-profile-section">
+        {{> InlineInput name="email" label="Почта" value=profileData.email }}
+        {{> InlineInput name="login" label="Логин" value=profileData.login }}
+        {{> InlineInput name="first_name" label="Имя" value=profileData.name }}
+        {{> InlineInput name="second_name" label="Фамилия" value=profileData.surname }}
+        {{> InlineInput name="display_name" label="Имя в чате" value=profileData.chatName }}
+        {{> InlineInput name="phone" label="Телефон" value=profileData.phone }}
+    </div>
+    <div class="profile__actions-section profile__actions-section_centered">
+        {{> Button type="primary" label="Сохранить" }}
+    </div>
+    {{> SidebarReturnBtn }}
+</main>

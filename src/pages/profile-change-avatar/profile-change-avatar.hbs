@@ -1,0 +1,41 @@
+<main class="profile">
+    <div class="profile__title-section">
+        <div class="profile__avatar">
+            <div class="profile__empty-avatar"></div>
+            {{#if profileData.avatar }}
+                <img
+                    class="profile__avatar-img"
+                    src="{{ profileData.avatar }}"
+                    alt="Аватар {{ profileData.chatName }}"
+                >
+            {{/if }}
+            <a class="profile__change-avatar-link" href="#" page="profileChangeAvatar">Поменять<br> аватар</a>
+        </div>
+        <h1 class="profile__chatName">{{ profileData.chatName }}</h1>
+    </div>
+    <div class="profile__data-table">
+        {{> DataTable label="Почта" value=profileData.email }}
+        {{> DataTable label="Логин" value=profileData.login }}
+        {{> DataTable label="Имя" value=profileData.name }}
+        {{> DataTable label="Фамилия" value=profileData.surname }}
+        {{> DataTable label="Имя в чате" value=profileData.chatName }}
+        {{> DataTable label="Телефон" value=profileData.phone }}
+    </div>
+    <div class="profile__actions-section">
+        {{> ActionLink label="Изменить данные" link="profileEdit" }}
+        {{> ActionLink label="Изменить пароль" link="profileChangePassword" }}
+        {{> ActionLink label="Выйти" link="#" warning=true }}
+    </div>
+
+    {{> SidebarReturnBtn }}
+
+    {{#if showDialog }}
+        <div class="avatar-dialog">
+            {{#> Dialog title="Загрузите файл" labelOk="Поменять" labelCancel="Нужно выбрать файл" }}
+                <div class="avatar-dialog__body">
+                    {{> FileInput name="avatar" }}
+                </div>
+            {{/Dialog }}
+        </div>
+    {{/if}}
+</main>
