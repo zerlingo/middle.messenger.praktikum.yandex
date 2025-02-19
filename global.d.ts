@@ -7,6 +7,10 @@ declare module '*.hbs' {
     export default string;
 }
 
+declare module '*.hbs?raw' {
+    export default string;
+}
+
 declare module '*.png' {
     export default any;
 }
