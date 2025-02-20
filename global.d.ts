@@ -3,6 +3,10 @@ declare module '*.css' {
     export default classes;
 }
 
+declare module '*.less' {
+    export default string;
+}
+
 declare module '*.hbs' {
     export default string;
 }
