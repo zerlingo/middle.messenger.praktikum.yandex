@@ -1,18 +1,20 @@
-.chat-sidebar__top-panel {
+.chat-sidebar {
+
+  &__top-panel {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100px;
     padding: 15px 10px;
-}
+  }
 
-.chat-sidebar__profile {
+  &__profile {
     width: 100%;
     display: flex;
     justify-content: end;
-}
+  }
 
-.chat-sidebar__profile-link {
+  &__profile-link {
     display: flex;
     align-items: baseline;
     justify-content: end;
@@ -20,9 +22,9 @@
     line-height: 1;
     color: var(--text-secondary-color);
     padding: 4px 0;
-}
+  }
 
-.chat-sidebar__profile-link::after {
+  &__profile-link::after {
     content: "";
     display: block;
     width: 4px;
@@ -32,18 +34,16 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
+  }
 
-.chat-sidebar__search {
+  &__search {}
 
-}
-
-.chat-sidebar__list-wrap {
+  &__list-wrap {
     height: calc(100% - 100px);
     overflow: hidden;
-}
+  }
 
-.chat-sidebar__list {
+  &__list {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -51,4 +51,5 @@
     margin: 0;
     padding: 10px 0;
     overflow-y: scroll;
+  }
 }

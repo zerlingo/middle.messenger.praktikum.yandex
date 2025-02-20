@@ -1,0 +1,34 @@
+.inline-input {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 500;
+  color: var(--text-color);
+
+  &__label {}
+
+  &__input {
+    color: var(--text-secondary-color);
+    border: none;
+    background: none;
+    max-width: 280px;
+    text-align: right;
+  }
+
+  &__input:hover {
+    background: #FBFBFB;
+  }
+
+  &__input:focus {
+    border: none;
+    outline: none;
+  }
+}
+
+.inline-input + .inline-input {
+  border-top: 1px solid var(--border-color);
+}

@@ -1,9 +1,8 @@
 .file-input {
-    position: relative;
-    display: inline-block;
-}
+  position: relative;
+  display: inline-block;
 
-.file-input__btn {
+  &__btn {
     position: relative;
     display: inline-block;
     text-decoration: underline;
@@ -16,21 +15,22 @@
     border: none;
     margin: 0;
     color: var(--main-color);
-}
+  }
 
-.file-input__text {
+  &__text {
     padding: 0 10px;
     line-height: 40px;
     display: inline-block;
-}
+  }
 
-.file-input__input {
+  &__input {
     position: absolute;
     z-index: -1;
     opacity: 0;
     display: block;
     width: 0;
     height: 0;
+  }
 }
 
 .file-input__input:focus + .file-input__btn {}

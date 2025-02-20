@@ -1,27 +1,26 @@
 .profile {
-    width: 100%;
-    max-width: 510px;
-    margin: 0 auto;
-}
+  width: 100%;
+  max-width: 510px;
+  margin: 0 auto;
 
-.profile__title-section {
+  &__title-section {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-bottom: 60px;
-}
+  }
 
-.profile__avatar {
+  &__avatar {
     position: relative;
     width: 130px;
     height: 130px;
     overflow: hidden;
     border-radius: 50%;
     margin-bottom: 20px;
-}
+  }
 
-.profile__empty-avatar {
+  &__empty-avatar {
     position: absolute;
     top: 0;
     left: 0;
@@ -33,9 +32,9 @@
     background-position: center;
     background-size: 40px;
     background-image: url("../../../static/img/profile-empty-avatar.svg");
-}
+  }
 
-.profile__avatar-img {
+  &__avatar-img {
     position: absolute;
     top: 0;
     left: 0;
@@ -44,9 +43,9 @@
     width: 130px;
     height: 130px;
     object-fit: cover;
-}
+  }
 
-.profile__change-avatar-link {
+  &__change-avatar-link {
     position: absolute;
     top: 0;
     left: 0;
@@ -62,37 +61,38 @@
     font-size: 13px;
     line-height: 14px;
     color: #FFFFFF;
-}
+  }
 
 
-.profile__change-avatar-link:hover {
+  &__change-avatar-link:hover {
     opacity: 1;
     color: #FFFFFF;
-}
+  }
 
-.profile__chatName {
+  &__chatName {
     margin: 0;
     font-size: 16px;
     line-height: 16px;
     font-weight: 600;
     text-align: center;
-}
+  }
 
-.profile__data-table {
+  &__data-table {
     margin-bottom: 60px;
-}
+  }
 
-.profile__edit-profile-section {
+  &__edit-profile-section {
     margin-bottom: 60px;
-}
+  }
 
-.profile__change-password-form {}
+  &__change-password-form {}
 
-.profile__edit-profile-form {}
+  &__edit-profile-form {}
 
-.profile__actions-section {}
+  &__actions-section {}
 
-.profile__actions-section_centered {
+  &__actions-section_centered {
     display: flex;
     justify-content: center;
+  }
 }

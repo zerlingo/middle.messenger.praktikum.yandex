@@ -1,75 +1,65 @@
 .chat {
-    position: relative;
-    display: flex;
-    width: 100%;
-    padding: 12px 10px;
-    margin: 2px 0;
-    cursor: pointer;
-}
+  position: relative;
+  display: flex;
+  width: 100%;
+  padding: 12px 10px;
+  margin: 2px 0;
+  cursor: pointer;
 
-.chat:first-child::before {
+  &:first-child::before {
     top: 0;
-}
+  }
 
-.chat:first-child::before, .chat::after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: calc(100% - 20px);
-    height: 1px;
-    background: var(--border-color);
-}
-
-.chat::after {
+  &::after {
     bottom: -2px;
-}
+  }
 
-.chat_active {
+  &_active {
     background-color: #E4EDFD;
-}
+  }
 
-.chat__avatar {
+  &__avatar {
     width: 47px;
     height: 47px;
     border-radius: 50%;
     flex-shrink: 0;
     background-color: #EFEFEF;
     overflow: hidden;
-}
+  }
 
-.chat__avatar-img {
+  &__avatar-img {
     width: 47px;
     height: 47px;
     object-fit: contain;
-}
+  }
 
-.chat__inner {
+  &__inner {
     text-align: left;
     margin: 0 0 0 10px;
-}
+  }
 
-.chat__name {
+  &__name {
     margin: 0 0 4px;
     font-size: 13px;
     color: var(--text-color);
-}
+  }
 
-.chat__preview {
+  &__preview {
     margin: 0;
     font-size: 12px;
     line-height: 15px;
     color: var(--text-secondary-color);
-}
+  }
 
-.chat__date {
+  &__date {
     position: absolute;
     top: 5px;
     right: 5px;
     font-size: 9px;
     color: var(--text-secondary-color);
-}
+  }
 
-.chat__unreadMsg {
+  &__unreadMsg {
     width: 20px;
     height: 20px;
     display: flex;
@@ -82,4 +72,14 @@
     font-size: 11px;
     color: #FFFFFF;
     background-color: var(--main-color);
+  }
+}
+
+.chat:first-child::before, .chat::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: calc(100% - 20px);
+  height: 1px;
+  background: var(--border-color);
 }
