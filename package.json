@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "vite --port 3000",
     "build": "tsc && vite build",
-    "start": "npm run build && node ./server.js",
+    "start": "npm run build",
     "preview": "vite preview"
   },
   "dependencies": {
