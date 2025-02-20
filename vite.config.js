@@ -5,5 +5,7 @@ export default defineConfig({
     build: {
         outDir: 'dist'
     },
-    port: 3000
+    server: {
+        port: 3000,
+    }
 })
