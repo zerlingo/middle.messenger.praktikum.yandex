@@ -4,25 +4,31 @@ declare module '*.css' {
 }
 
 declare module '*.less' {
-    export default string;
+    const data: string;
+    export default data;
 }
 
 declare module '*.hbs' {
-    export default string;
+    const data: string;
+    export default data;
 }
 
 declare module '*.hbs?raw' {
-    export default string;
+    const data: string;
+    export default data;
 }
 
 declare module '*.png' {
-    export default any;
+    const data: string;
+    export default data;
 }
 
 declare module '*.jpg' {
-    export default any;
+    const data: string;
+    export default data;
 }
 
 declare module '*.svg' {
-    export default any;
+    const data: string;
+    export default data;
 }
