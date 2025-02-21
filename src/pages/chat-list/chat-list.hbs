@@ -1,0 +1,19 @@
+<main class="chat-layout">
+    <aside class="chat-layout__sidebar">
+        {{> ChatSidebar list=list }}
+    </aside>
+
+    <main class="chat-layout__main{{#unless activeChat }} chat-layout__main_empty{{/unless}}">
+        {{#unless activeChat }}
+            Выберите чат, чтобы отправить сообщение
+        {{else}}
+            {{ activeChat }}
+        {{/unless }}
+    </main>
+
+    {{#if showDialog }}
+        {{#> Dialog title="Добавить пользователя" labelOk="Добавить" }}
+            {{> Input label="логин" }}
+        {{/Dialog }}
+    {{/if}}
+</main>

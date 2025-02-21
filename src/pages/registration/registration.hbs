@@ -1,0 +1,25 @@
+<div class="container">
+    <form class="registration-form" action="">
+        <div class="registration-form__body">
+            <h1 class="registration-form__title">Регистрация</h1>
+            {{> Input name="email" label="Email" }}
+            {{> Input name="login" label="Login" }}
+            {{> Input name="first_name" label="Name" }}
+            {{> Input name="second_name" label="Surname" }}
+            {{> Input name="phone" label="Phone" }}
+            {{> Input name="password" label="Password" password=true error=true value="123455" }}
+            {{> Input
+                    name="repeat_password"
+                    label="Repeat password"
+                    password=true
+                    error=true
+                    error-text="Пароли не совпадают"
+                    value="123456"
+            }}
+        </div>
+        <div class="login-form__footer">
+            {{> Button label="Зарегистрироваться" type="primary" }}
+            {{> Button label="Войти" type="link" }}
+        </div>
+    </form>
+</div>

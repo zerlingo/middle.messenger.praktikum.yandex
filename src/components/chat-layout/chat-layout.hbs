@@ -1,0 +1,18 @@
+<div class="chat-layout">
+    <aside class="chat-layout__sidebar">
+        <div class="chat-layout__top-panel">
+            <div class="chat-layout__profile">
+                <a href="#" class="chat-layout__profile-link" page="profile">Профиль</a>
+            </div>
+            <div class="chat-list__search">
+                {{> Search placeholder='Поиск' }}
+            </div>
+        </div>
+
+        <div class="chat-layout__list">
+            {{#each chats}}
+                {{> Chat }}
+            {{/each}}
+        </div>
+    </aside>
+</div>

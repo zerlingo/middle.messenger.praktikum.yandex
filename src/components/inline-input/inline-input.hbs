@@ -1,0 +1,10 @@
+<div class="inline-input">
+    <label for="{{ name }}">{{ label }}</label>
+    <input
+        class="inline-input__input"
+        type="{{#if password }}password{{else}}text{{/if }}"
+        name="{{ name }}"
+        id="{{ name }}"
+        value="{{ value }}"
+    >
+</div>

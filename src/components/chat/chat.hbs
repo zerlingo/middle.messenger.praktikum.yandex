@@ -1,0 +1,21 @@
+<li class="chat {{#if active }}chat_active{{/if}}">
+    <div class="chat__avatar">
+        <img class="chat__avatar-img" src="{{ avatar }}" alt="Аватар чата {{ name }}">
+    </div>
+    <div class="chat__inner">
+        <h2 class="chat__name">
+            {{ name }}
+        </h2>
+        <p class="chat__preview">
+            {{ preview }}
+        </p>
+    </div>
+    <div class="chat__date">
+        {{ lastUpdateDate }}
+    </div>
+    {{#if unreadCount}}
+        <div class="chat__unreadMsg">
+            {{ unreadCount }}
+        </div>
+    {{/if }}
+</li>

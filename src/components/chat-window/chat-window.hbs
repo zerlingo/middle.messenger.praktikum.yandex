@@ -1,0 +1,47 @@
+<div class="chat-window">
+    <nav class="chat-window__head">
+        <div class="chat-window__title">
+            <div class="chat-window__chat-avatar">
+                <img class="chat-window__chat-avatar-img" src="{{ avatar }}" alt="Аватар чата {{ name }}" />
+            </div>
+            <span class="chat-window__chat-name">{{ name }}</span>
+        </div>
+        <div class="chat-window__options-menu">
+            <button class="chat-window__options {{#if activeOptionsDropdown}}chat-window__options_active{{/if}}"></button>
+            {{> DropdownMenu options=chatOptions position="top-right" }}
+        </div>
+    </nav>
+    <div class="chat-window__inner">
+        <div class="chat-window__content">
+            <div class="chat-date">19 июня</div>
+            <div class="chat-message">
+                <div class="chat-message__content">
+                    <p>Привет! Смотри, тут всплыл интересный кусок лунной космической истории — НАСА в какой-то момент попросила Хассельблад адаптировать модель SWC для полетов на Луну. Сейчас мы все знаем что астронавты летали с моделью 500 EL — и к слову говоря, все тушки этих камер все еще находятся на поверхности Луны, так как астронавты с собой забрали только кассеты с пленкой.</p>
+                    <p>Хассельблад в итоге адаптировал SWC для космоса, но что-то пошло не так и на ракету они так никогда и не попали. Всего их было произведено 25 штук, одну из них недавно продали на аукционе за 45000 евро.</p>
+                </div>
+                <span class="chat-message__time">11:56</span>
+            </div>
+            <div class="chat-image">
+                <img class="chat-image__img" src="{{ img }}" alt="{{ imgAlt }}" />
+                <span class="chat-image__time">11:56</span>
+            </div>
+            <div class="chat-message chat-message_answer">
+                <div class="chat-message__content">
+                    <p>Круто!</p>
+                </div>
+                <span class="chat-message__time">12:00</span>
+            </div>
+        </div>
+    </div>
+    <div class="chat-window__footer">
+        <div class="chat-window__attach-menu">
+            <button class="chat-window__attach-btn {{#if activeAttachDropdown}}chat-window__attach-btn_active{{/if}}"></button>
+            {{> DropdownMenu options=attachOptions position="bottom-left" }}
+        </div>
+        <div class="chat-window__message-wrap">
+            <label class="chat-window__message-input-label" for="message-input"></label>
+            <input class="chat-window__message-input" name="message" type="text" id="message-input" placeholder="Сообщение">
+        </div>
+        <button class="chat-window__send-btn"></button>
+    </div>
+</div>

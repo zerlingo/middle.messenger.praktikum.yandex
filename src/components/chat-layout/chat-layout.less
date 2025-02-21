@@ -1,0 +1,26 @@
+.chat-layout {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+
+  &__sidebar {
+    width: 30%;
+    height: 100%;
+    background-color: #FBFBFB;
+    border-right: 1px solid var(--border-color);
+    overflow-y: hidden;
+  }
+
+  &__main {
+    width: 70%;
+    background-color: #FFFFFF;
+    color: var(--text-secondary-color);
+  }
+
+  &__main_empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+  }
+}

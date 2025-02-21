@@ -1,0 +1,15 @@
+<div class="chat-sidebar__top-panel">
+    <div class="chat-sidebar__profile">
+        <a href="#" class="chat-sidebar__profile-link" page="profile">Профиль</a>
+    </div>
+    <div class="chat-sidebar__search">
+        {{> Search placeholder='Поиск' }}
+    </div>
+</div>
+<div class="chat-sidebar__list-wrap">
+    <ul class="chat-sidebar__list">
+        {{#each chats}}
+            {{> Chat }}
+        {{/each}}
+    </ul>
+</div>
